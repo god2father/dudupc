@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>嘟嘟律师首页</title>
+
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/css.css">
+
+<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+
+<script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js "></script>
+
+<script src="js/jquery.fullPage.min.js"></script>
+
+<script>
+
+$(function(){
+
+	if($.browser.msie && $.browser.version < 10){
+
+		$('body').addClass('ltie10');
+
+	}
+
+	$.fn.fullpage({
+
+		verticalCentered: false,
+
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+
+		navigation: true,
+
+		navigationTooltips: ['首页', '附近律师', '快速咨询', '悬赏', '发红包', '其它信息'],
+        menu: '#myMenu',
+		afterRender: function(){
+//$(".section1").removeClass("active");
+//$(".section1").addClass("active");
+//            $(".bg11").animate({
+//                left: "-15%",
+//            }, 500);
+		},
+        afterLoad: function(anchorLink, index) {
+            if (index == 1) {
+                $('.section1').removeClass("active");
+                $('.section1').addClass("active");
+            }
+        }
+
+	});
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="section section1">
+
+    <div class="s1-top-menu">
+		<a href="#"><img src="images/s1-logo.png" alt="崇法"/></a>
+		<!--<ul>-->
+			<!--<li><a href="#">首页</a><i class="border-right"></i></li>-->
+			<!--<li><a href="#">更新记录</a><i class="border-right"></i></li>-->
+			<!--<li><a href="#">帮助中心</a><i class="border-right"></i></li>-->
+			<!--<li><a href="#">联系我们</a><i class="border-right"></i></li>-->
+			<!--<li><a href="#">律师入驻</a></li>-->
+		<!--</ul>-->
+
+    </div>
+	<div class="bg home"></div>
+
+	<div class="bg11">
+        <!--<img src="images/s1-phone.png" alt="" width="25%">-->
+    </div>
+
+	<div class="bg12"></div>
+
+	<div class="bg13"></div>
+
+    <div class="bg14 s1-download">
+        <div class="s1-download-app">
+            <a href="http://www.chongfa.cn/downjump/android" class="app-download margin-b-12"><img src="images/android_icon.png" class="app-download-icon" alt="">Android&nbsp;&nbsp;&nbsp;下载</a>
+            <a href="http://www.chongfa.cn/downjump/ios" class="app-download margin-b-12"><img src="images/ios_icon.png" class="app-download-icon" alt="">App&nbsp;Store下载</a>
+        </div>
+        <div class="s1-download-qrcode">
+            <a href="http://chongfa.cn/#"><img src="images/s1-qrcode.png" alt="扫描二维码"></a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section section2">
+
+	<div class="bg bg-fff"></div>
+
+	<div class="bg21">
+        <!--<img src="images/s2-txt.png"> -->
+        <p class="bg21-txt1">沟通无距离</p>
+        <p class="bg21-txt2">随时随地，快速找到律师</p>
+    </div>
+
+	<!--<div class="bg22"></div>-->
+
+	<div class="bg23"></div>
+
+</div>
+
+
+
+<div class="section section3">
+
+	<div class="bg" style="background: #f0fefc"></div>
+
+	<div class="bg31">
+        <!--<img src="images/s3-txt.png" alt=""/>-->
+        <p class="bg21-txt1">最有效的咨询方式</p>
+        <p class="bg21-txt2">有问题，一个电话就够了</p>
+    </div>
+
+	<div class="bg32"></div>
+
+	<div class="bg33"></div>
+
+</div>
+
+
+
+
+<div class="section section4">
+
+	<div class="bg bg-fff"></div>
+
+	<div class="bg21">
+        <!--<img src="images/s4-txt.png"> -->
+        <p class="bg21-txt1">实力律师团队</p>
+        <p class="bg21-txt2">为您的服务提供质量保证</p>
+    </div>
+
+	<!--<div class="bg22"></div>-->
+
+	<div class="bg43"></div>
+
+</div>
+
+<div class="section section5">
+
+	<div class="bg" style="background: #f0fefc"></div>
+
+	<div class="bg31">
+        <!--<img src="images/s5-txt.png" alt=""/>-->
+        <p class="bg21-txt1">最佳的服务保障</p>
+        <p class="bg21-txt2">付费法律咨询，专业 靠谱</p>
+    </div>
+
+	<div class="bg53"></div>
+
+</div>
+
+<div class="section section6">
+
+	<div class="bg bg-fff"></div>
+
+	<div class="bg102">
+		<div class="s6-list">
+			<div class="s6-list-left">
+				<ul>
+					<li>
+						<p class="s6-list-title"><img src="images/s6-icon1.png" alt=""><span>客服电话</span></p>
+						<p class="s6-list-txt">0516-83993969</p>
+					</li>
+					<li>
+						<p class="s6-list-title"><img src="images/s6-icon2.png" alt=""><span>工作时间</span></p>
+						<p class="s6-list-txt">工作日9:00-18:00</p>
+					</li>
+					<li>
+						<p class="s6-list-title"><img src="images/s6-icon3.png" alt=""><span>联系邮箱</span></p>
+						<p class="s6-list-txt">admin@chongfa.com</p>
+					</li>
+					<li>
+						<p class="s6-list-title"><img src="images/s6-icon4.png" alt=""><span>办公地址</span></p>
+						<p class="s6-list-txt">徐州软件园c11-512/513／527室</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="s6-qr">
+				<h2>扫码下载更直接</h2>
+				<p><img src="images/s6-qr.png" alt=""></p>
+			</div>
+		</div>
+		<div class="s6-bottom">
+			<ul>
+				<li>
+					<a href="#">更新记录</a>
+					<a href="#">常见问题</a>
+					<a href="#">联系我们</a>
+				</li>
+				<li>Copyright © 徐州比邻网络科技有限公司 | 苏ICP备16017945-1号 | 苏公网安备 32031102000730号|增值电信业务经营许可证：苏B2-20160609</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
